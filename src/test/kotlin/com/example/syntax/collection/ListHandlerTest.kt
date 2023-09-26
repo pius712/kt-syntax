@@ -18,9 +18,10 @@ class ListHandlerTest {
 
     @Test
     fun mapTest() {
-        val listHandler = ListHandler();
+//        val listHandler = ListHandler();
 
-        val actual = listHandler.map1(people);
+//        val actual = listHandler.map1(people);
+        val actual = people.filter(fun (each): Boolean = each.age === 20)
         Assertions.assertThat(actual).isEqualTo(listOf(10,20,30,40,10))
     }
 
