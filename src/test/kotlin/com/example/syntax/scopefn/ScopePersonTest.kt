@@ -98,4 +98,14 @@ class ScopePersonTest {
 
         assertThat(legnth2).isNull()
     }
+
+    @Test
+    fun scopeFn8()  {
+        val maxNum = run {
+            val list = listOf(4,5,1,2,3,6);
+            list.max()
+        }
+
+        assertThat(maxNum).isEqualTo(6)
+    }
 }
