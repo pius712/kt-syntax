@@ -8,10 +8,15 @@ class DefaultNestedTest {
     @Test
     fun defaultInnerTest() {
 
-        val defaultNested = DefaultNested("hello")
 
         val greeting = DefaultNested.Foo().hello();
 
         Assertions.assertThat(greeting).isEqualTo({})
+    }
+
+    @Test
+    fun companionTest() {
+        val greeting = DefaultNested.Foo().companionHello();
+        Assertions.assertThat(greeting).isEqualTo("companionHello")
     }
 }
