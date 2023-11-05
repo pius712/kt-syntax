@@ -20,4 +20,9 @@ class RangesTest {
         println((1..5 step 2).toList())
     }
 
+
+    @Test
+    fun test4() {
+        println((1 until 5).toList())
+    }
 }
